@@ -1,0 +1,634 @@
+{
+  "dataset": "ngsim",
+  "complete_run_files": [
+    "cv_cv_seed0",
+    "epn_epn_seed0",
+    "epn_epn_seed1",
+    "epn_epn_seed2",
+    "pfl_full_seed0",
+    "pfl_full_seed1",
+    "pfl_full_seed2",
+    "pfl_plan0_seed0",
+    "pfl_plan0_seed1",
+    "pfl_plan0_seed2",
+    "pfl_rel0_seed0",
+    "pfl_rel0_seed1",
+    "pfl_rel0_seed2",
+    "pfl_stage2-legacy-reval_seed0",
+    "pfl_stage2_rel0_seed0",
+    "pfl_stage2_rel0_seed1",
+    "pfl_stage2_rel0_seed2",
+    "pfl_stage2_seed0",
+    "pfl_stage2_seed1",
+    "pfl_stage2_seed2"
+  ],
+  "matrix_complete": true,
+  "missing_run_files": [],
+  "stage2_matrix_complete": true,
+  "stage2_missing_run_files": [],
+  "stage2_rel0_matrix_complete": true,
+  "stage2_rel0_missing_run_files": [],
+  "pre_registered_equivalence_margin": 0.03,
+  "comparisons": {
+    "planning_gain": {
+      "ALL": {
+        "baseline": "PLAN=0",
+        "candidate": "REL=0",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": 0.039276764785647976,
+        "vehicle_bootstrap_95ci_m": [
+          0.03209930722867435,
+          0.046522213119293054
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.013764885573437724,
+          0.053441806211233525
+        ],
+        "paired_vehicles": 2934,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "PLAN=0",
+        "candidate": "REL=0",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": 0.21257852469091737,
+        "vehicle_bootstrap_95ci_m": [
+          0.2030562925763019,
+          0.22199819768814946
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.1804673949451943,
+          0.23866557161490753
+        ],
+        "paired_vehicles": 1987,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "PLAN=0",
+        "candidate": "REL=0",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": -0.025815710832534998,
+        "vehicle_bootstrap_95ci_m": [
+          -0.03213215993700056,
+          -0.019381515039315584
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.0622188696339658,
+          -0.0008104491445287952
+        ],
+        "paired_vehicles": 2856,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "PLAN=0",
+        "candidate": "REL=0",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": 0.24348616824826588,
+        "vehicle_bootstrap_95ci_m": [
+          0.230171270273815,
+          0.2564705040858134
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.18446156992671517,
+          0.27186789980433723
+        ],
+        "paired_vehicles": 2483,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      }
+    },
+    "relational_gain": {
+      "ALL": {
+        "baseline": "REL=0",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": 0.12395360609618171,
+        "vehicle_bootstrap_95ci_m": [
+          0.11693717603736287,
+          0.13121207725023531
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.09001181514249784,
+          0.17508407474104234
+        ],
+        "paired_vehicles": 2934,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "REL=0",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": 0.28936132622741023,
+        "vehicle_bootstrap_95ci_m": [
+          0.2767049787649608,
+          0.300536327085908
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.21052758339553226,
+          0.33627851548014515
+        ],
+        "paired_vehicles": 1987,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "REL=0",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": 0.08677319013450782,
+        "vehicle_bootstrap_95ci_m": [
+          0.07924861904568802,
+          0.09353478983632972
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.057825063360804764,
+          0.12940303517828575
+        ],
+        "paired_vehicles": 2856,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "REL=0",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": 0.19138183349279006,
+        "vehicle_bootstrap_95ci_m": [
+          0.18012636103060145,
+          0.20251523814952044
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.12225538071969076,
+          0.25884008843681244
+        ],
+        "paired_vehicles": 2483,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      }
+    },
+    "full_vs_epn_gtfree": {
+      "ALL": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": -0.08414119051474532,
+        "vehicle_bootstrap_95ci_m": [
+          -0.0984828205948947,
+          -0.07039932362366401
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.12838782723413697,
+          -0.05002302702269049
+        ],
+        "paired_vehicles": 2934,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": 0.12503215236484297,
+        "vehicle_bootstrap_95ci_m": [
+          0.10932289540683952,
+          0.13944322860553043
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.1072896227777866,
+          0.15719897158708163
+        ],
+        "paired_vehicles": 1987,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": -0.14816016180434396,
+        "vehicle_bootstrap_95ci_m": [
+          -0.1628424471962061,
+          -0.1324756769908766
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.20686426891910017,
+          -0.0988867047859984
+        ],
+        "paired_vehicles": 2856,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": 0.11189674313386436,
+        "vehicle_bootstrap_95ci_m": [
+          0.09162075645831053,
+          0.1320898117559107
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.07225087382487527,
+          0.12753730232492858
+        ],
+        "paired_vehicles": 2483,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      }
+    },
+    "full_vs_epn_oracle": {
+      "ALL": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": -0.28519980262134964,
+        "vehicle_bootstrap_95ci_m": [
+          -0.2942109566351686,
+          -0.2764718292069313
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.3107335678010433,
+          -0.2571410382691886
+        ],
+        "paired_vehicles": 2923,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": -0.1696693071670589,
+        "vehicle_bootstrap_95ci_m": [
+          -0.18027335483848694,
+          -0.15953556582374656
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.18681242594842015,
+          -0.1335396516659052
+        ],
+        "paired_vehicles": 1985,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": -0.316823369673486,
+        "vehicle_bootstrap_95ci_m": [
+          -0.3260897755524357,
+          -0.30719708358295283
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.3496959674053735,
+          -0.2802832254225985
+        ],
+        "paired_vehicles": 2847,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "EPN",
+        "candidate": "Full",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": -0.17974018777589607,
+        "vehicle_bootstrap_95ci_m": [
+          -0.1933400373252194,
+          -0.16723144856700264
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.19310206834508203,
+          -0.16826178907196887
+        ],
+        "paired_vehicles": 2463,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      }
+    },
+    "stage2_vs_epn_gtfree": {
+      "ALL": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": 0.232574217742197,
+        "vehicle_bootstrap_95ci_m": [
+          0.21979887094130568,
+          0.24578983900442594
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.1786918681317929,
+          0.26441230806765753
+        ],
+        "paired_vehicles": 2934,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": 0.3448450954598193,
+        "vehicle_bootstrap_95ci_m": [
+          0.33238729905793796,
+          0.3574697115989557
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.3228552146510283,
+          0.3621742249197415
+        ],
+        "paired_vehicles": 1987,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": 0.19270763207470276,
+        "vehicle_bootstrap_95ci_m": [
+          0.17917676208817865,
+          0.20703301211725764
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.12382300555773196,
+          0.237515558404052
+        ],
+        "paired_vehicles": 2856,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": 0.3632538492032899,
+        "vehicle_bootstrap_95ci_m": [
+          0.3437794076322551,
+          0.38244483981403204
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.3135330484316141,
+          0.3916165919852219
+        ],
+        "paired_vehicles": 2483,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      }
+    },
+    "stage2_vs_epn_oracle": {
+      "ALL": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": -0.1062719471514038,
+        "vehicle_bootstrap_95ci_m": [
+          -0.11399739192628391,
+          -0.09883512129138929
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.12983121826042424,
+          -0.09135881823679681
+        ],
+        "paired_vehicles": 2923,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": -0.0466978043601083,
+        "vehicle_bootstrap_95ci_m": [
+          -0.056461574668633226,
+          -0.0370369464633993
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.05323153191061497,
+          -0.027116818182032567
+        ],
+        "paired_vehicles": 1985,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": -0.12585489700515795,
+        "vehicle_bootstrap_95ci_m": [
+          -0.13419486545451323,
+          -0.1169896767689813
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.15826126087510542,
+          -0.10135978173408235
+        ],
+        "paired_vehicles": 2847,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "EPN",
+        "candidate": "Stage2",
+        "protocol": "oracle",
+        "selection_rule": "gt_endpoint_nearest_trajectory",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": -0.03541222985076962,
+        "vehicle_bootstrap_95ci_m": [
+          -0.04708055593626968,
+          -0.023444628525233102
+        ],
+        "recording_bootstrap_95ci_m": [
+          -0.05318924364506078,
+          -0.025340051191190423
+        ],
+        "paired_vehicles": 2463,
+        "recordings": 6,
+        "status": "baseline_significantly_better"
+      }
+    },
+    "stage2_relational_gain": {
+      "ALL": {
+        "baseline": "Stage2_REL0",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "ALL",
+        "mean_gain_m": 0.12781109531242776,
+        "vehicle_bootstrap_95ci_m": [
+          0.12252350736363003,
+          0.13328632512265226
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.1015949745707045,
+          0.1497014463150476
+        ],
+        "paired_vehicles": 2934,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G1_direct_follower": {
+        "baseline": "Stage2_REL0",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G1_direct_follower",
+        "mean_gain_m": 0.16994214839047006,
+        "vehicle_bootstrap_95ci_m": [
+          0.159908047577474,
+          0.1794466402911999
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.10721276166903497,
+          0.19614756672726175
+        ],
+        "paired_vehicles": 1987,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G2_adjacent_near": {
+        "baseline": "Stage2_REL0",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G2_adjacent_near",
+        "mean_gain_m": 0.11926763254882783,
+        "vehicle_bootstrap_95ci_m": [
+          0.11389249929276898,
+          0.12457119592348992
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.0996248052907489,
+          0.1376723382661381
+        ],
+        "paired_vehicles": 2856,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      },
+      "G3_other": {
+        "baseline": "Stage2_REL0",
+        "candidate": "Stage2",
+        "protocol": "gt_free",
+        "selection_rule": "sample_medoid",
+        "K": 6,
+        "group": "G3_other",
+        "mean_gain_m": 0.15610368683316428,
+        "vehicle_bootstrap_95ci_m": [
+          0.14762432387453628,
+          0.16461369013973368
+        ],
+        "recording_bootstrap_95ci_m": [
+          0.11083547082834981,
+          0.18323480722893068
+        ],
+        "paired_vehicles": 2483,
+        "recordings": 6,
+        "status": "candidate_significantly_better"
+      }
+    }
+  },
+  "oracle_equivalence": {
+    "relative_difference_full_minus_epn": 0.27018772981686373,
+    "vehicle_bootstrap_95ci": [
+      0.2619901506948177,
+      0.2784138772857818
+    ],
+    "margin": 0.03,
+    "paired_vehicles": 2923,
+    "status": "EPN_significantly_better"
+  },
+  "stage2_oracle_equivalence": {
+    "relative_difference_full_minus_epn": 0.1070843209743755,
+    "vehicle_bootstrap_95ci": [
+      0.1004844241606668,
+      0.11372963026775679
+    ],
+    "margin": 0.03,
+    "paired_vehicles": 2923,
+    "status": "EPN_significantly_better"
+  },
+  "claim_classification": {
+    "case": "B",
+    "epn_gt_free_selection": "sample_medoid_fallback_no_candidate_confidence",
+    "warning": "EPN top-confidence is unavailable; any GT-free conclusion must name the fallback rule."
+  },
+  "window_independence": "statistics use paired dataset-scoped target vehicles"
+}

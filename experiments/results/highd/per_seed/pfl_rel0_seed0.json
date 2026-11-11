@@ -1,0 +1,92 @@
+{
+  "protocol_version": "fair_comparison_v1",
+  "dataset": "highd",
+  "metric_revision": "full_horizon_mask_v2",
+  "model": "PFL",
+  "variant": "REL=0",
+  "seed": 0,
+  "checkpoint": "/home/hyundo/motion_prediction/PFL/trained_models/fair_highd_pfl_rel0_seed0/fair_highd_pfl_rel0_seed0-best.tar",
+  "complete_test": true,
+  "result_scope": "official_test",
+  "deterministic_algorithms": false,
+  "parameter_count": {
+    "total": 3178727,
+    "trainable": 3178727
+  },
+  "runtime": {
+    "encoding_seconds": 72.9631808293052,
+    "sampling_seconds": 2236.030515442835,
+    "scene_latency_ms": 2.2848135148445405,
+    "target_latency_ms": 1.0521394607017047,
+    "scenes": 1010583,
+    "targets": 2194570,
+    "batches": 15791,
+    "full_horizon_targets": 2038653,
+    "K_generated": 20,
+    "NFE": 10,
+    "generation_by_K": {
+      "6": {
+        "seconds": 0.43382046185433865,
+        "scene_latency_ms": 0.6778444716474041,
+        "target_latency_ms": 0.5583274927340266,
+        "benchmark_batches": 10
+      },
+      "20": {
+        "seconds": 2236.030515442835,
+        "scene_latency_ms": 2.212614417067015,
+        "target_latency_ms": 1.0188923185147136,
+        "benchmark_batches": 15791
+      }
+    }
+  },
+  "system": {
+    "python": "3.10.20",
+    "torch": "2.5.0+cu124",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "cpu": "x86_64",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "cuda": "12.4"
+  },
+  "selection_definitions": {
+    "sample_mean": "arithmetic mean of K trajectories; not a sampled trajectory; GT-free",
+    "sample_medoid": "real candidate minimizing summed pairwise trajectory distance; GT-free",
+    "gt_endpoint_nearest_trajectory": "candidate selected by the observed GT 5-second endpoint, then full trajectory scored; oracle; targets without a valid 5-second endpoint are excluded",
+    "direct_minADE": "minimum ADE over candidates with a valid full 5-second future; may select a different candidate",
+    "direct_minFDE": "minimum FDE over candidates with a valid full 5-second future; may select a different candidate"
+  },
+  "epn_top_confidence": "not_applicable",
+  "distribution": {
+    "6": {
+      "lateral_sample_spread_m": 0.1019217355533508,
+      "longitudinal_sample_spread_m": 0.22427875485355636,
+      "average_pairwise_trajectory_distance_m": 0.3225922330888767,
+      "endpoint_spread_m": 0.6895213876822577,
+      "spread_error_ratio": 1.2719498198573034,
+      "empirical_endpoint_coverage": {
+        "0.5": 0.6757452101951632,
+        "1.0": 0.8667791919468394,
+        "2.0": 0.9576386957466523,
+        "3.0": 0.9846329905089292,
+        "5.0": 0.9973168557866395
+      }
+    },
+    "20": {
+      "lateral_sample_spread_m": 0.10796982335232118,
+      "longitudinal_sample_spread_m": 0.23512200434911024,
+      "average_pairwise_trajectory_distance_m": 0.32254701469758873,
+      "endpoint_spread_m": 0.7303806370156756,
+      "spread_error_ratio": 1.3852017672252093,
+      "empirical_endpoint_coverage": {
+        "0.5": 0.851443085213619,
+        "1.0": 0.9370471580989996,
+        "2.0": 0.9791847852479063,
+        "3.0": 0.9927412855449161,
+        "5.0": 0.9988006786834248
+      }
+    }
+  },
+  "ego_plan_source": "recorded_ego_future_proxy_with_test_time_quintic_fit",
+  "per_vehicle_csv": "/home/hyundo/motion_prediction/experiments/results/highd/per_vehicle/pfl_rel0_seed0.csv",
+  "summary_csv": "/home/hyundo/motion_prediction/experiments/results/highd/per_seed/pfl_rel0_seed0.csv"
+}

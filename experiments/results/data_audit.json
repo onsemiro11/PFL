@@ -1,0 +1,102 @@
+{
+  "protocol": "existing_vehicle_id_split",
+  "near_frames": 50,
+  "datasets": {
+    "ngsim": {
+      "splits": {
+        "train": {
+          "windows": 5777839,
+          "unique_ego_vehicles": 8844,
+          "unique_target_vehicles": 9165,
+          "segments": 6,
+          "recordings": 6
+        },
+        "val": {
+          "windows": 761734,
+          "unique_ego_vehicles": 1010,
+          "unique_target_vehicles": 1457,
+          "segments": 6,
+          "recordings": 6
+        },
+        "test": {
+          "windows": 1320103,
+          "unique_ego_vehicles": 1925,
+          "unique_target_vehicles": 2934,
+          "segments": 6,
+          "recordings": 6
+        }
+      },
+      "overlap": {
+        "train_val": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 487,
+          "target_near_time_overlap": 487,
+          "segment_overlap": 6,
+          "recording_overlap": 6
+        },
+        "train_test": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 826,
+          "target_near_time_overlap": 769,
+          "segment_overlap": 6,
+          "recording_overlap": 6
+        },
+        "val_test": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 557,
+          "target_near_time_overlap": 554,
+          "segment_overlap": 6,
+          "recording_overlap": 6
+        }
+      }
+    },
+    "highd": {
+      "splits": {
+        "train": {
+          "windows": 3796329,
+          "unique_ego_vehicles": 67583,
+          "unique_target_vehicles": 67565,
+          "segments": 120,
+          "recordings": 60
+        },
+        "val": {
+          "windows": 498337,
+          "unique_ego_vehicles": 9648,
+          "unique_target_vehicles": 9842,
+          "segments": 120,
+          "recordings": 60
+        },
+        "test": {
+          "windows": 1010583,
+          "unique_ego_vehicles": 18756,
+          "unique_target_vehicles": 18827,
+          "segments": 120,
+          "recordings": 60
+        }
+      },
+      "overlap": {
+        "train_val": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 209,
+          "target_near_time_overlap": 209,
+          "segment_overlap": 120,
+          "recording_overlap": 60
+        },
+        "train_test": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 0,
+          "target_near_time_overlap": 0,
+          "segment_overlap": 120,
+          "recording_overlap": 60
+        },
+        "val_test": {
+          "ego_vehicle_overlap": 0,
+          "target_vehicle_overlap": 254,
+          "target_near_time_overlap": 251,
+          "segment_overlap": 120,
+          "recording_overlap": 60
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+recording_id,dataset_segment,vehicle_id,ego_vehicle_id,frame_id,group,case,pfl_ade_m,epn_ade_m,epn_minus_pfl_ade_m,categories
+4,4,2812,2834,8366,G2_adjacent_near,lane_change,9.373248797607422,9.90173514404297,0.5284863464355478,lane_change;adjacent_near
+3,3,1756,1768,9014,G2_adjacent_near,braking,0.5442982083320618,1.010424080657959,0.4661258723258972,braking;adjacent_near
+4,4,3273,3257,9644,G1_direct_follower,direct_follower,0.20021997356414795,0.6611733781814576,0.46095340461730966,direct_follower
+4,4,3242,3238,9160,G2_adjacent_near,adjacent_near,0.8345387409210205,1.261836787033081,0.42729804611206057,adjacent_near
+1,1,2629,2578,8119,G2_adjacent_near,failure,1.595240273666382,1.129655683708191,-0.46558458995819096,adjacent_near

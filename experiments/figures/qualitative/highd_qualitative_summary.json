@@ -1,0 +1,62 @@
+{
+  "dataset": "highd",
+  "targets_screened": 1088,
+  "targets_with_future": 1088,
+  "selection_protocol": "median PFL ADE gain among PFL wins in each pre-defined category",
+  "failure_protocol": "median PFL ADE loss among PFL losses",
+  "metric": "GT-free K=20 sample-medoid ADE",
+  "pfl_win_rate": 0.5257352941176471,
+  "mean_epn_minus_pfl_ade_m": 0.020134326760205167,
+  "category_metrics": {
+    "lane_change": {
+      "targets": 32,
+      "pfl_win_rate": 0.53125,
+      "mean_epn_minus_pfl_ade_m": 0.02921320311874151,
+      "median_epn_minus_pfl_ade_m": 0.0028093352437019437
+    },
+    "braking": {
+      "targets": 66,
+      "pfl_win_rate": 0.6060606060606061,
+      "mean_epn_minus_pfl_ade_m": 0.06684524567560715,
+      "median_epn_minus_pfl_ade_m": 0.057778222918510445
+    },
+    "direct_follower": {
+      "targets": 118,
+      "pfl_win_rate": 0.6101694915254238,
+      "mean_epn_minus_pfl_ade_m": 0.08495349137060725,
+      "median_epn_minus_pfl_ade_m": 0.04554258032441139
+    },
+    "adjacent_near": {
+      "targets": 837,
+      "pfl_win_rate": 0.5232974910394266,
+      "mean_epn_minus_pfl_ade_m": 0.015146867232735013,
+      "median_epn_minus_pfl_ade_m": 0.008920958018302921
+    }
+  },
+  "figure": "experiments/figures/qualitative/highd_qualitative_comparison.png",
+  "figure_pdf": "experiments/figures/qualitative/highd_qualitative_comparison.pdf",
+  "failure_figure": "experiments/figures/qualitative/highd_qualitative_failure.png",
+  "cases_csv": "experiments/figures/qualitative/highd_qualitative_cases.csv",
+  "pfl_protocol": {
+    "dataset": "highd",
+    "model": "pfl",
+    "seed": 0,
+    "K": 20,
+    "NFE": 10,
+    "selection": "sample_medoid_gt_free",
+    "scene_sampling": "linspace_over_ordered_test_set",
+    "scene_count": 512,
+    "checkpoint": "/home/hyundo/motion_prediction/PFL/trained_models/stage2_highd_seed0/stage2_highd_seed0-best.tar"
+  },
+  "epn_protocol": {
+    "dataset": "highd",
+    "model": "epn",
+    "seed": 0,
+    "K": 20,
+    "NFE": 1,
+    "selection": "sample_medoid_gt_free",
+    "scene_sampling": "linspace_over_ordered_test_set",
+    "scene_count": 512,
+    "checkpoint": "/home/hyundo/motion_prediction/EPN/trained_models/fair_highd_epn_epn_seed0/fair_highd_epn_epn_seed0-best.tar"
+  }
+}

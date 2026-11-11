@@ -1,0 +1,9 @@
+{
+  "protocol": "stage2_rel0_v1",
+  "state": "complete",
+  "stage": "complete",
+  "dataset": "",
+  "seed": null,
+  "detail": "Stage2 REL=0 three-seed training, evaluation, and comparison complete",
+  "updated_at": "2026-10-02T16:40:30.385069+09:00"
+}

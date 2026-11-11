@@ -1,0 +1,12 @@
+ㅇㅇㅇㅇ{
+  "study": "temporal_relation",
+  "state": "running",
+  "completed": [],
+  "updated_at": "2026-09-14T05:59:55.405403+09:00",
+  "current": {
+    "stage": "baseline_matrix",
+    "dataset": "all",
+    "model": "all",
+    "seed": null
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "protocol_version": "fair_comparison_v1",
+  "dataset": "highd",
+  "metric_revision": "full_horizon_mask_v2",
+  "model": "EPN",
+  "variant": "EPN",
+  "seed": 2,
+  "checkpoint": "/home/hyundo/motion_prediction/EPN/trained_models/fair_highd_epn_epn_seed2/fair_highd_epn_epn_seed2-best.tar",
+  "complete_test": true,
+  "result_scope": "official_test",
+  "deterministic_algorithms": false,
+  "parameter_count": {
+    "total": 1824603,
+    "trainable": 1824603
+  },
+  "runtime": {
+    "encoding_seconds": 42.10308535536751,
+    "sampling_seconds": 242.92726905969903,
+    "scene_latency_ms": 0.2820454672353152,
+    "target_latency_ms": 0.12987981901468923,
+    "scenes": 1010583,
+    "targets": 2194570,
+    "batches": 15791,
+    "full_horizon_targets": 2038653,
+    "K_generated": 20,
+    "NFE": 1,
+    "generation_by_K": {
+      "6": {
+        "seconds": 0.05138155445456505,
+        "scene_latency_ms": 0.08028367883525789,
+        "target_latency_ms": 0.06612812671115192,
+        "benchmark_batches": 10
+      },
+      "20": {
+        "seconds": 242.92726905969903,
+        "scene_latency_ms": 0.2403832926733371,
+        "target_latency_ms": 0.11069470058357629,
+        "benchmark_batches": 15791
+      }
+    }
+  },
+  "system": {
+    "python": "3.10.20",
+    "torch": "2.5.0+cu124",
+    "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.35",
+    "cpu": "x86_64",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070 SUPER",
+    "cuda": "12.4"
+  },
+  "selection_definitions": {
+    "sample_mean": "arithmetic mean of K trajectories; not a sampled trajectory; GT-free",
+    "sample_medoid": "real candidate minimizing summed pairwise trajectory distance; GT-free",
+    "gt_endpoint_nearest_trajectory": "candidate selected by the observed GT 5-second endpoint, then full trajectory scored; oracle; targets without a valid 5-second endpoint are excluded",
+    "direct_minADE": "minimum ADE over candidates with a valid full 5-second future; may select a different candidate",
+    "direct_minFDE": "minimum FDE over candidates with a valid full 5-second future; may select a different candidate"
+  },
+  "epn_top_confidence": "unavailable_no_candidate_specific_confidence",
+  "distribution": {},
+  "ego_plan_source": "recorded_ego_future_proxy_with_test_time_quintic_fit",
+  "per_vehicle_csv": "/home/hyundo/motion_prediction/experiments/results/highd/per_vehicle/epn_epn_seed2.csv",
+  "summary_csv": "/home/hyundo/motion_prediction/experiments/results/highd/per_seed/epn_epn_seed2.csv"
+}

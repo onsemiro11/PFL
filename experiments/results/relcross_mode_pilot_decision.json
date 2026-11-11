@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-09-15T09:06:47.870349+09:00",
+  "selection_data": "fixed validation only; test set was not inspected",
+  "metric": "sample_mean_rmse_k20_m",
+  "full_seed0": 2.1435537529763087,
+  "relcross_mode_seed0": 2.2166635343494403,
+  "absolute_delta_m": 0.07310978137313162,
+  "relative_delta_percent": 3.4106810371150815,
+  "decision": "reject",
+  "scope": "combined pilot decision; attribution requires later ablation"
+}

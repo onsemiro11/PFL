@@ -1,0 +1,7 @@
+dataset,split,windows,unique_ego_vehicles,unique_target_vehicles,segments,recordings
+ngsim,train,5777839,8844,9165,6,6
+ngsim,val,761734,1010,1457,6,6
+ngsim,test,1320103,1925,2934,6,6
+highd,train,3796329,67583,67565,120,60
+highd,val,498337,9648,9842,120,60
+highd,test,1010583,18756,18827,120,60

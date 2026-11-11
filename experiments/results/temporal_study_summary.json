@@ -1,0 +1,132 @@
+{
+  "ngsim": {
+    "complete_run_files": [
+      "cv_cv_seed0"
+    ],
+    "comparisons": {
+      "global_temporal_vs_full/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      }
+    },
+    "oracle_equivalence_to_epn_k6": {
+      "status": "pending",
+      "paired_vehicles": 0,
+      "margin": 0.03
+    },
+    "oracle_equivalence_to_epn_k20": {
+      "status": "pending",
+      "paired_vehicles": 0,
+      "margin": 0.03
+    },
+    "interpretation": "pending until three seeds and corrected full-test files exist"
+  },
+  "highd": {
+    "complete_run_files": [],
+    "comparisons": {
+      "global_temporal_vs_full/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/ALL": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G1_direct_follower": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G2_adjacent_near": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_full/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_zero/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      },
+      "global_temporal_vs_epn/G3_other": {
+        "status": "pending",
+        "paired_vehicles": 0
+      }
+    },
+    "oracle_equivalence_to_epn_k6": {
+      "status": "pending",
+      "paired_vehicles": 0,
+      "margin": 0.03
+    },
+    "oracle_equivalence_to_epn_k20": {
+      "status": "pending",
+      "paired_vehicles": 0,
+      "margin": 0.03
+    },
+    "interpretation": "pending until three seeds and corrected full-test files exist"
+  }
+}

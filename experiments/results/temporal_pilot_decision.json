@@ -1,0 +1,18 @@
+{
+  "created_at": "2026-09-14T05:59:55.386658+09:00",
+  "selection_data": "fixed validation only; official test is not used",
+  "metric": "sample_mean_rmse_k20_m",
+  "scores": {
+    "Full": 2.1435537529763087,
+    "Global+Temporal pilot": 2.3393184728984333
+  },
+  "complete": {
+    "Full": true,
+    "Global+Temporal pilot": true,
+    "Temporal-only pilot": false,
+    "Zero-relation control pilot": false
+  },
+  "decision": "reject",
+  "reason": "Global+Temporal is more than 3% worse than Full on fixed validation",
+  "scope": "pilot decision only; not a paper result"
+}

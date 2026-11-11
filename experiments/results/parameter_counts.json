@@ -1,0 +1,63 @@
+{
+  "PFL": {
+    "PLAN=0": {
+      "total": 3138711,
+      "trainable": 3138711,
+      "encoder": 174672,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "REL=0": {
+      "total": 3178727,
+      "trainable": 3178727,
+      "encoder": 214688,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "REL=0_capacity_control": {
+      "total": 3210439,
+      "trainable": 3210439,
+      "encoder": 246400,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "Full": {
+      "total": 3210439,
+      "trainable": 3210439,
+      "encoder": 246400,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "Global+Temporal": {
+      "total": 3211831,
+      "trainable": 3211831,
+      "encoder": 246400,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "Temporal-only": {
+      "total": 3211831,
+      "trainable": 3211831,
+      "encoder": 246400,
+      "context_dimension": 112,
+      "mean_head": false
+    },
+    "Temporal-zero-control": {
+      "total": 3211831,
+      "trainable": 3211831,
+      "encoder": 246400,
+      "context_dimension": 112,
+      "mean_head": false
+    }
+  },
+  "EPN": {
+    "total": 1824603,
+    "trainable": 1824603
+  },
+  "relational_parameter_difference": {
+    "parameters": 31712,
+    "fraction_of_full": 0.009877776839865203,
+    "main_matrix_uses_capacity_control": false,
+    "reason": "the difference is below one percent; the exact-size optional control remains available"
+  }
+}

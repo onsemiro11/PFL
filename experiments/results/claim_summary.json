@@ -1,0 +1,12 @@
+{
+  "ngsim": {
+    "case": "B",
+    "epn_gt_free_selection": "sample_medoid_fallback_no_candidate_confidence",
+    "warning": "EPN top-confidence is unavailable; any GT-free conclusion must name the fallback rule."
+  },
+  "highd": {
+    "case": "D",
+    "epn_gt_free_selection": "sample_medoid_fallback_no_candidate_confidence",
+    "warning": "EPN top-confidence is unavailable; any GT-free conclusion must name the fallback rule."
+  }
+}

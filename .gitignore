@@ -1,0 +1,40 @@
+# Whitelist: only the PFL code folders are tracked.
+/*
+!/.gitignore
+!/README.md
+!/PFL/
+!/preprocess/
+!/experiments/
+!/scripts/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Checkpoints and model outputs
+/PFL/trained_models/
+/PFL/.bak_pre_fixes/
+*.tar
+*.pt
+*.pth
+
+# Data and data-derived files (never pushed)
+*.mat
+*.npz
+*.h5
+*.pkl
+
+# Experiment outputs that are too large or reproducible
+/experiments/archive/
+/experiments/results/*/per_vehicle/
+/experiments/results/qualitative/
+/experiments/results/smoke/
+*.log
+
+# EPN-only helper scripts (EPN is a baseline, not part of this repository)
+/scripts/train_epn.sh
+/scripts/eval_epn.sh
+/scripts/viz_epn.py
+/scripts/check_dataset.py
+/scripts/bench_dataloader.py
+/scripts/compare_batches.py

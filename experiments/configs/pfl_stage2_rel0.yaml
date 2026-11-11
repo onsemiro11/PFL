@@ -1,0 +1,8 @@
+{
+  "model": "PFL", "variant": "Stage2_REL0",
+  "eligible_for_fair_summary": true,
+  "model_args": {"use_planning": true, "use_relational": false, "relation_control": "none", "use_attention": true, "order": 3, "mean_head": true, "aux_weight": 0.3, "vf_dropout": 0.0, "weight_decay": 0.0},
+  "train": {"batch_size": 64, "learning_rate": 0.0001, "max_epochs": 15, "min_epochs": 5, "early_stopping_patience": 3, "validation_batches": 100, "validation_samples": 20, "validation_metric": "sample_mean_rmse_k20", "scheduler": "cosine_with_500_step_warmup", "optimizer": "AdamW", "flow_weight": 1.0, "mean_weight": 0.01, "deterministic_algorithms": false, "log_every": 500},
+  "evaluation": {"K": [6, 20], "NFE": 10, "sample_chunk": 20, "interaction_threshold_m": 30.0, "plan_info_ds": 1},
+  "statistics": {"seeds": [0, 1, 2], "bootstrap_repetitions": 2000, "equivalence_margin": 0.03, "bootstrap_unit": "vehicle"}
+}

@@ -1,0 +1,146 @@
+{
+  "protocol": "fair_comparison_v1",
+  "expected_runs": 26,
+  "learned_runs": 24,
+  "completed_runs": [
+    {
+      "dataset": "ngsim",
+      "model": "cv",
+      "seed": 0
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_plan0",
+      "seed": 0
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_rel0",
+      "seed": 0
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_full",
+      "seed": 0
+    },
+    {
+      "dataset": "ngsim",
+      "model": "epn",
+      "seed": 0
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_plan0",
+      "seed": 1
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_rel0",
+      "seed": 1
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_full",
+      "seed": 1
+    },
+    {
+      "dataset": "ngsim",
+      "model": "epn",
+      "seed": 1
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_plan0",
+      "seed": 2
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_rel0",
+      "seed": 2
+    },
+    {
+      "dataset": "ngsim",
+      "model": "pfl_full",
+      "seed": 2
+    },
+    {
+      "dataset": "ngsim",
+      "model": "epn",
+      "seed": 2
+    },
+    {
+      "dataset": "highd",
+      "model": "cv",
+      "seed": 0
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_plan0",
+      "seed": 0
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_rel0",
+      "seed": 0
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_full",
+      "seed": 0
+    },
+    {
+      "dataset": "highd",
+      "model": "epn",
+      "seed": 0
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_plan0",
+      "seed": 1
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_rel0",
+      "seed": 1
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_full",
+      "seed": 1
+    },
+    {
+      "dataset": "highd",
+      "model": "epn",
+      "seed": 1
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_plan0",
+      "seed": 2
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_rel0",
+      "seed": 2
+    },
+    {
+      "dataset": "highd",
+      "model": "pfl_full",
+      "seed": 2
+    },
+    {
+      "dataset": "highd",
+      "model": "epn",
+      "seed": 2
+    }
+  ],
+  "state": "complete",
+  "updated_at": "2026-09-21T11:07:48.566955+09:00",
+  "current": {
+    "stage": "complete",
+    "dataset": "",
+    "model": "summary",
+    "seed": null,
+    "detail": "all 26 baseline training/evaluation runs complete; streaming summaries generated"
+  }
+}

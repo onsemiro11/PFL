@@ -1,0 +1,439 @@
+{
+  "status": {
+    "protocol": "fair_comparison_v1",
+    "expected_runs": 26,
+    "learned_runs": 24,
+    "completed_runs": [
+      {
+        "dataset": "ngsim",
+        "model": "cv",
+        "seed": 0
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_plan0",
+        "seed": 0
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_rel0",
+        "seed": 0
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_full",
+        "seed": 0
+      },
+      {
+        "dataset": "ngsim",
+        "model": "epn",
+        "seed": 0
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_plan0",
+        "seed": 1
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_rel0",
+        "seed": 1
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_full",
+        "seed": 1
+      },
+      {
+        "dataset": "ngsim",
+        "model": "epn",
+        "seed": 1
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_plan0",
+        "seed": 2
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_rel0",
+        "seed": 2
+      },
+      {
+        "dataset": "ngsim",
+        "model": "pfl_full",
+        "seed": 2
+      },
+      {
+        "dataset": "ngsim",
+        "model": "epn",
+        "seed": 2
+      },
+      {
+        "dataset": "highd",
+        "model": "cv",
+        "seed": 0
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_plan0",
+        "seed": 0
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_rel0",
+        "seed": 0
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_full",
+        "seed": 0
+      },
+      {
+        "dataset": "highd",
+        "model": "epn",
+        "seed": 0
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_plan0",
+        "seed": 1
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_rel0",
+        "seed": 1
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_full",
+        "seed": 1
+      },
+      {
+        "dataset": "highd",
+        "model": "epn",
+        "seed": 1
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_plan0",
+        "seed": 2
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_rel0",
+        "seed": 2
+      },
+      {
+        "dataset": "highd",
+        "model": "pfl_full",
+        "seed": 2
+      },
+      {
+        "dataset": "highd",
+        "model": "epn",
+        "seed": 2
+      }
+    ],
+    "state": "complete",
+    "updated_at": "2026-09-21T11:07:48.566955+09:00",
+    "current": {
+      "stage": "complete",
+      "dataset": "",
+      "model": "summary",
+      "seed": null,
+      "detail": "all 26 baseline training/evaluation runs complete; streaming summaries generated"
+    }
+  },
+  "training_runs": [
+    {
+      "name": "fair_highd_pfl_full_seed0",
+      "dataset": "highd",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 8,
+      "best_validation_rmse_m": 0.5327243048501309,
+      "training_seconds": 16116.722324609756
+    },
+    {
+      "name": "fair_highd_pfl_full_seed1",
+      "dataset": "highd",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 11,
+      "best_validation_rmse_m": 0.5283042593578583,
+      "training_seconds": 22067.90080523491
+    },
+    {
+      "name": "fair_highd_pfl_full_seed2",
+      "dataset": "highd",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 13,
+      "best_validation_rmse_m": 0.5119971545381065,
+      "training_seconds": 26039.804903507233
+    },
+    {
+      "name": "fair_highd_pfl_plan0_seed0",
+      "dataset": "highd",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 12,
+      "best_validation_rmse_m": 0.5401782094093197,
+      "training_seconds": 20020.848877429962
+    },
+    {
+      "name": "fair_highd_pfl_plan0_seed1",
+      "dataset": "highd",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 11,
+      "best_validation_rmse_m": 0.5196801353865669,
+      "training_seconds": 18389.117230653763
+    },
+    {
+      "name": "fair_highd_pfl_plan0_seed2",
+      "dataset": "highd",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 6,
+      "best_validation_rmse_m": 0.601165778537357,
+      "training_seconds": 10079.026803255081
+    },
+    {
+      "name": "fair_highd_pfl_rel0_seed0",
+      "dataset": "highd",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 10,
+      "best_validation_rmse_m": 0.5484721240595691,
+      "training_seconds": 19185.697041988373
+    },
+    {
+      "name": "fair_highd_pfl_rel0_seed1",
+      "dataset": "highd",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 11,
+      "best_validation_rmse_m": 0.5204815555943265,
+      "training_seconds": 20992.235587120056
+    },
+    {
+      "name": "fair_highd_pfl_rel0_seed2",
+      "dataset": "highd",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 13,
+      "best_validation_rmse_m": 0.5268209158783085,
+      "training_seconds": 24763.360283851624
+    },
+    {
+      "name": "fair_ngsim_pfl_full_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.1435537529763087,
+      "training_seconds": 17783.148992061615
+    },
+    {
+      "name": "fair_ngsim_pfl_full_seed1",
+      "dataset": "ngsim",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 9,
+      "best_validation_rmse_m": 2.7462483675384335,
+      "training_seconds": 31888.390246152878
+    },
+    {
+      "name": "fair_ngsim_pfl_full_seed2",
+      "dataset": "ngsim",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 1.9352451895816627,
+      "training_seconds": 17755.234431266785
+    },
+    {
+      "name": "fair_ngsim_pfl_plan0_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.468309091729672,
+      "training_seconds": 14902.836139440536
+    },
+    {
+      "name": "fair_ngsim_pfl_plan0_seed0_prelog_restart_20260910",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": false,
+      "actual_epochs": null,
+      "best_validation_rmse_m": null,
+      "training_seconds": null
+    },
+    {
+      "name": "fair_ngsim_pfl_plan0_seed1",
+      "dataset": "ngsim",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.9109370853615824,
+      "training_seconds": 15094.98326587677
+    },
+    {
+      "name": "fair_ngsim_pfl_plan0_seed2",
+      "dataset": "ngsim",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.2935385800102734,
+      "training_seconds": 2843.658357858658
+    },
+    {
+      "name": "fair_ngsim_pfl_rel0_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.874581496799018,
+      "training_seconds": 16782.223474264145
+    },
+    {
+      "name": "fair_ngsim_pfl_rel0_seed1",
+      "dataset": "ngsim",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 7,
+      "best_validation_rmse_m": 2.6314959347285423,
+      "training_seconds": 23578.557903051376
+    },
+    {
+      "name": "fair_ngsim_pfl_rel0_seed2",
+      "dataset": "ngsim",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 9,
+      "best_validation_rmse_m": 2.325052329430003,
+      "training_seconds": 30198.699030160904
+    },
+    {
+      "name": "fair_ngsim_pfl_relcross_mode_pilot_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.2166635343494403,
+      "training_seconds": 28445.75451207161
+    },
+    {
+      "name": "fair_ngsim_pfl_temporal_rel_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 5,
+      "best_validation_rmse_m": 2.3393184728984333,
+      "training_seconds": 17870.316450357437
+    },
+    {
+      "name": "fair_highd_epn_epn_seed0",
+      "dataset": "highd",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 10,
+      "best_validation_rmse_m": 0.57523819917283,
+      "training_seconds": 11030.254020690918
+    },
+    {
+      "name": "fair_highd_epn_epn_seed1",
+      "dataset": "highd",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 10,
+      "best_validation_rmse_m": 0.5769693456328698,
+      "training_seconds": 11011.52037525177
+    },
+    {
+      "name": "fair_highd_epn_epn_seed2",
+      "dataset": "highd",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 11,
+      "best_validation_rmse_m": 0.5962401148136766,
+      "training_seconds": 12119.961432695389
+    },
+    {
+      "name": "fair_ngsim_epn_epn_seed0",
+      "dataset": "ngsim",
+      "seed": 0,
+      "training_complete": true,
+      "actual_epochs": 14,
+      "best_validation_rmse_m": 1.8239218258051184,
+      "training_seconds": 33485.784881830215
+    },
+    {
+      "name": "fair_ngsim_epn_epn_seed1",
+      "dataset": "ngsim",
+      "seed": 1,
+      "training_complete": true,
+      "actual_epochs": 9,
+      "best_validation_rmse_m": 1.8508366615293712,
+      "training_seconds": 4843.139199256897
+    },
+    {
+      "name": "fair_ngsim_epn_epn_seed2",
+      "dataset": "ngsim",
+      "seed": 2,
+      "training_complete": true,
+      "actual_epochs": 10,
+      "best_validation_rmse_m": 1.8155974494857814,
+      "training_seconds": 23555.83290743828
+    }
+  ],
+  "official_evaluations": {
+    "ngsim": [
+      "cv_cv_seed0",
+      "epn_epn_seed0",
+      "epn_epn_seed1",
+      "epn_epn_seed2",
+      "pfl_full_seed0",
+      "pfl_full_seed1",
+      "pfl_full_seed2",
+      "pfl_plan0_seed0",
+      "pfl_plan0_seed1",
+      "pfl_plan0_seed2",
+      "pfl_rel0_seed0",
+      "pfl_rel0_seed1",
+      "pfl_rel0_seed2",
+      "pfl_stage2-legacy-reval_seed0",
+      "pfl_stage2_rel0_seed0",
+      "pfl_stage2_rel0_seed1",
+      "pfl_stage2_rel0_seed2",
+      "pfl_stage2_seed0",
+      "pfl_stage2_seed1",
+      "pfl_stage2_seed2"
+    ],
+    "highd": [
+      "cv_cv_seed0",
+      "epn_epn_seed0",
+      "epn_epn_seed1",
+      "epn_epn_seed2",
+      "pfl_full_seed0",
+      "pfl_full_seed1",
+      "pfl_full_seed2",
+      "pfl_plan0_seed0",
+      "pfl_plan0_seed1",
+      "pfl_plan0_seed2",
+      "pfl_rel0_seed0",
+      "pfl_rel0_seed1",
+      "pfl_rel0_seed2",
+      "pfl_stage2_rel0_seed0",
+      "pfl_stage2_rel0_seed1",
+      "pfl_stage2_rel0_seed2",
+      "pfl_stage2_seed0",
+      "pfl_stage2_seed1",
+      "pfl_stage2_seed2"
+    ]
+  },
+  "note": "smoke outputs are excluded"
+}

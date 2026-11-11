@@ -1,0 +1,62 @@
+{
+  "dataset": "ngsim",
+  "targets_screened": 3174,
+  "targets_with_future": 3173,
+  "selection_protocol": "median PFL ADE gain among PFL wins in each pre-defined category",
+  "failure_protocol": "median PFL ADE loss among PFL losses",
+  "metric": "GT-free K=20 sample-medoid ADE",
+  "pfl_win_rate": 0.4966908288685786,
+  "mean_epn_minus_pfl_ade_m": -0.010069319150788231,
+  "category_metrics": {
+    "lane_change": {
+      "targets": 47,
+      "pfl_win_rate": 0.425531914893617,
+      "mean_epn_minus_pfl_ade_m": 0.031141721577339965,
+      "median_epn_minus_pfl_ade_m": -0.08505076789855948
+    },
+    "braking": {
+      "targets": 528,
+      "pfl_win_rate": 0.6041666666666666,
+      "mean_epn_minus_pfl_ade_m": 0.18029036465890025,
+      "median_epn_minus_pfl_ade_m": 0.10758665614128111
+    },
+    "direct_follower": {
+      "targets": 451,
+      "pfl_win_rate": 0.5432372505543237,
+      "mean_epn_minus_pfl_ade_m": 0.06065461296079526,
+      "median_epn_minus_pfl_ade_m": 0.03802738451957702
+    },
+    "adjacent_near": {
+      "targets": 2252,
+      "pfl_win_rate": 0.4715808170515098,
+      "mean_epn_minus_pfl_ade_m": -0.05176079234338166,
+      "median_epn_minus_pfl_ade_m": -0.03254034662246705
+    }
+  },
+  "figure": "experiments/figures/qualitative/ngsim_qualitative_comparison.png",
+  "figure_pdf": "experiments/figures/qualitative/ngsim_qualitative_comparison.pdf",
+  "failure_figure": "experiments/figures/qualitative/ngsim_qualitative_failure.png",
+  "cases_csv": "experiments/figures/qualitative/ngsim_qualitative_cases.csv",
+  "pfl_protocol": {
+    "dataset": "ngsim",
+    "model": "pfl",
+    "seed": 0,
+    "K": 20,
+    "NFE": 10,
+    "selection": "sample_medoid_gt_free",
+    "scene_sampling": "linspace_over_ordered_test_set",
+    "scene_count": 512,
+    "checkpoint": "/home/hyundo/motion_prediction/PFL/trained_models/stage2_ngsim_seed0/stage2_ngsim_seed0-best.tar"
+  },
+  "epn_protocol": {
+    "dataset": "ngsim",
+    "model": "epn",
+    "seed": 0,
+    "K": 20,
+    "NFE": 1,
+    "selection": "sample_medoid_gt_free",
+    "scene_sampling": "linspace_over_ordered_test_set",
+    "scene_count": 512,
+    "checkpoint": "/home/hyundo/motion_prediction/EPN/trained_models/fair_ngsim_epn_epn_seed0/fair_ngsim_epn_epn_seed0-best.tar"
+  }
+}
